@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    text-align: center;
+    color: white;
+    background-color: #145F94;
+    padding: 38px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.parent {
+    margin: 10px 170px;
+}
+
+.doordharshan-container {
+    max-width: 60%;
+    background-color: #F6F6F6;
+    float: left;
+    border: 2px solid #145F94;
+}
+
+.common-container-bar {
+    color: white;
+    background-color: #145F94;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.network-content {
+    text-align: justify;
+    font-size: 20.6px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.common-container-bar, .network-content {
+    padding: 20px 30px;
+}
+
+.sun-container {
+    max-width: 38%;
+    background-color: #F6F6F6;
+    float: right;
+    border: 2px solid #145F94;
+}
+
+.sony-container {
+    max-width: 60%;
+    background-color: #F6F6F6;
+    float: left;
+    border: 2px solid #145F94;
+}
+
+.star-container {
+    max-width: 38%;
+    background-color: #F6F6F6;
+    float: right;
+    border: 2px solid #145F94;
+}
+
+.zee-container {
+    max-width: 60%;
+    background-color: #F6F6F6;
+    float: left;
+    border: 2px solid #145F94;
+}
+
+.doordharshan-container, .sony-container, .sun-container, .star-container, .zee-container {
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 768px){
+    .doordharshan-container, .sony-container, .sun-container, .star-container, .zee-container {
+        max-width: 100%;
+    }
+}
