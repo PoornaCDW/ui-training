@@ -1,0 +1,45 @@
+* {
+    background-color: #2A2B30;
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    margin: auto;
+    max-width: 87.2%;
+}
+
+.fashionz-logo {
+    float: left;
+    padding-top: 83.8px;
+    padding-left: 31.74px;
+    /* background-color: #ffffff; */
+}
+
+.fashionz-logo img {
+    max-width: 221.6px;
+}
+
+.icon {
+    background-color: #d8d8d8;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    float: right;
+    margin: 69px 0px 0px 10px;
+}
+
+.fashionz-logo, .icon {
+    display: block;
+}
+
+.row {
+    display: inline-block;
+}
+
+.card {
+    background-color: #24252A;
+}
