@@ -1,15 +1,22 @@
 * {
     background-color: #2A2B30;
     color: #ffffff;
+    font-family: 'Roboto', sans-serif;
 }
 
-img {
+body {
     max-width: 100%;
 }
 
 header {
     margin: auto;
     max-width: 87.2%;
+}
+
+.main-section {
+    position: relative;
+    top: 62px;
+    margin: auto;
 }
 
 .fashionz-logo {
@@ -20,7 +27,7 @@ header {
 }
 
 .fashionz-logo img {
-    max-width: 221.6px;
+    max-width: 87.2%;;
 }
 
 .icon {
@@ -37,9 +44,62 @@ header {
 }
 
 .row {
-    display: inline-block;
+    display: block;
+    margin-left: 160px;
 }
 
 .card {
     background-color: #24252A;
+    display: inline-block;
+    width: 384px;
+    height: 480px;
+    margin-right: 60px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.product-image {
+    background-color: #24252A;
+    position: relative;
+    width: 290px;
+    height: 290px;
+    object-fit: contain;
+    left: 50px;
+    top: 100px;
+}
+
+.fa-star {
+    background-color: #24252A;
+    color: #88B281;
+    font-size: 26px;
+    position: absolute;
+    margin-left: 330px;
+    margin-top: 22px;
+}
+
+.add-to-cart {
+    color: #AAAAAA;
+    border-color: #AAAAAA;
+    border-style: solid;
+    padding: 12px 24px;
+    font-size: 20px;
+    border-width: 1px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.product-name {
+    font-size: 30px;
+    margin-bottom: 8px;
+    margin-top: 18px;
+}
+
+.product-price {
+    margin-bottom: 0;
+    color: #AAAAAA;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 0px;
 }
