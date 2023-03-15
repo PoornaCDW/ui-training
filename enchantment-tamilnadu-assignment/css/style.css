@@ -1,6 +1,9 @@
 * {
-    font-family: 'IBM Plex Sans', sans-serif;
     margin: 0;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 nav {
@@ -16,21 +19,21 @@ nav p {
     font-family: 'Roboto', sans-serif;
 }
 
+.cover-image {
+    width: 100%;
+}
+
 .content-container{
-    /* background-color: aqua; */
     max-width: 87%;
     margin: auto;
     padding: 100px 0 0 0;
 }
 .row{
-    /* background-color: salmon; */
     width: 100%;
-    /* margin: auto; */
     margin-bottom: 60px;
 }
 
 .card {
-    /* background-color: aqua; */
     width: 560px;
     margin: 13px;
     display: inline-block;
@@ -74,7 +77,6 @@ nav p {
 }
 
 .bottom-content {
-    /* background-color: aqua; */
     padding-top: 40px;
     margin: auto;
     text-align: center;
