@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+header {
+    padding: 82px 212px;
+}
+
+header h2 {
+    font-size: 33px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.designer {
+    padding: 64px 0px;
+}
+
+.designer-name {
+    display: flex;
+    justify-content: center;
+}
+
+.designer-name h1 {
+    font-size: 200px;
+}
+
+.first-name {
+    font-weight: 100;
+}
+
+.designer-description {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 16px;
+    letter-spacing: 4px;
+}
+
+.designer-description h2 {
+    color: #cecece;
+}
+
+.designer-description pre {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #4b8fe2;
+    display: inline;
+}
+
+.designer-work, .icons {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.images {
+    width: 32%;
+    padding-bottom: 30px;
+}
+
+footer {
+    margin-top: 146px;
+}
+
+.bottom-description {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.bottom-description h2 {
+    color: #cecece;
+}
+
+.bottom-description pre {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #B8E985;
+    display: inline;
+}
+
+.icons {
+    margin: 120px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 10%;
+}
+
+.icons img {
+    max-height: 80px;
+}
+
+footer hr {
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.for-line {
+    margin-top: 336px;
+    display: flex;
+    justify-content: center;
+}
+
+.line1 {
+    width: 42px;
+    margin-right: 45px;
+}
+
+.line2 {
+    width: 264px;
+}
+
+.socials {
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    gap: 25px;
+    text-align: center;
+}
+
+.socials i, .M {
+    width: 62px;
+    height: 62px;
+    padding: 10px;
+    border: 1px solid white ;
+    border-radius: 50%;
+}
+
+.M {
+    font-family: 'Blaak ExtraBold PERSONAL USE', sans-serif;
+    padding: 4px;
+    font-style: normal;
+}
+
+.bottom-quote {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 186px;
+}
+
+@media screen and (max-width: 475px) {
+    .icons {
+        gap: 50px;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    header {
+        top: 350px;
+        padding-right: 10px;
+        position: relative;
+    }
+
+    header h2 {
+        font-size: 25px;
+    }
+    
+    .images {
+        width: 100%
+    }
+
+    .bottom-description h2 {
+        font-size: 35px;
+    }
+
+    .designer-work {
+        margin-top: 40px;
+    }
+
+    .designer-name h1 {
+        font-size: 65px;
+    }
+
+    .designer-description h2 {
+        font-size: 35px;
+    }
+}
