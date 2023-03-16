@@ -44,7 +44,7 @@ header {
 }
 
 .menu-contents {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 178px;
     right: 0px;
