@@ -21,7 +21,7 @@ nav {
 
 /* styling the parent div holding all the channel containers */
 .parent {
-    margin: 10px 170px;
+    margin: 10px 170px 125px 170px;
 }
 
 /* applying left float */
@@ -34,6 +34,10 @@ nav {
 .float-right {   
     max-width: 38%;
     float: right;
+}
+
+.clear-fix {
+    clear: both;
 }
 
 /* START :: styling the common containers */
