@@ -1,51 +1,74 @@
+/* Universal selector */
 * {
+    /* margin 0 to get the full screen */
     margin: 0;
     box-sizing: border-box;
 }
 
+/* img: setting max width for all the images */
 img {
     max-width: 100%;
 }
 
+/* body: applying font family, color and background */
 body {
     font-family: 'Roboto Condensed', sans-serif;
     color: #fff;
     background-color: #000;
 }
 
+/* header: applying padding for header */
 header {
     padding: 82px 212px;
 }
 
+/* decendent selector for h2 under header: applying font size and flex property */
 header h2 {
     font-size: 33px;
     display: flex;
     justify-content: flex-end;
 }
 
+/* parent class - designer: applying padding */
 .designer {
     padding: 64px 0px;
 }
 
+/* designer-name: adding flex property */
 .designer-name {
     display: flex;
     justify-content: center;
 }
 
+/* adding font size to the designer's name */
 .designer-name h1 {
     font-size: 200px;
 }
 
+/* applying styles for the first name of the designer */
 .first-name {
     font-weight: 100;
 }
 
+/* styling for designer's description, and adding flex property */
 .designer-description {
     display: flex;
     justify-content: center;
     font-size: 40px;
     margin-top: 16px;
     letter-spacing: 4px;
+}
+
+/* hidden designer: displayed only in mobile view */
+.designer-email {
+    display: none;
+    margin-top: 30px;
+}
+
+.designer-email h2 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 .designer-description h2 {
@@ -72,27 +95,28 @@ header h2 {
     padding-bottom: 30px;
 }
 
-footer {
+.designer-sponsors {
     margin-top: 146px;
 }
 
-.bottom-description {
+.sponsors-description {
     display: flex;
     justify-content: center;
     font-size: 40px;
     letter-spacing: 2px;
 }
 
-.bottom-description h2 {
+.sponsors-description h2 {
     color: #cecece;
 }
 
-.bottom-description pre {
+.sponsors-description pre {
     font-family: 'Roboto Condensed', sans-serif;
     color: #B8E985;
     display: inline;
 }
 
+/* styling for icons: border, bordor-radius and flex properties */
 .icons {
     margin: 120px auto;
     width: 80%;
@@ -129,6 +153,7 @@ footer hr {
     width: 264px;
 }
 
+/* socials icons styling: flex properties, gap and size */
 .socials {
     margin: 100px 0;
     display: flex;
@@ -149,16 +174,16 @@ footer hr {
 .M {
     font-family: 'Blaak ExtraBold PERSONAL USE', sans-serif;
     padding: 4px;
-    font-style: normal;
 }
 
-.bottom-quote {
+.coding-quote {
     font-size: 20px;
     display: flex;
     justify-content: center;
     margin-bottom: 186px;
 }
 
+/* mobile view manipulations */
 @media screen and (max-width: 475px) {
     .icons {
         gap: 50px;
@@ -168,21 +193,21 @@ footer hr {
         width: 30%;
     }
 
+    /* hiding the email on top for mobile view */
     header {
-        top: 350px;
-        padding-right: 10px;
-        position: relative;
+        visibility: hidden;
     }
 
-    header h2 {
-        font-size: 25px;
+    /* enabling email in mobile view */
+    .designer-email {
+        display: block;
     }
     
     .images {
         width: 100%
     }
 
-    .bottom-description h2 {
+    .sponsors-description h2 {
         font-size: 35px;
     }
 
