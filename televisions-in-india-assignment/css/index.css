@@ -1,8 +1,14 @@
+/* Universal selector: setting margin to 0 */
 * {
     margin: 0;
+}
+
+/* Applying font to the body */
+body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* nav bar styling */
 nav {
     text-align: center;
     color: white;
@@ -13,17 +19,24 @@ nav {
     margin-bottom: 40px;
 }
 
+/* styling the parent div holding all the channel containers */
 .parent {
     margin: 10px 170px;
 }
 
-.doordharshan-container {
+/* applying left float */
+.float-left {
     max-width: 60%;
-    background-color: #F6F6F6;
     float: left;
-    border: 2px solid #145F94;
 }
 
+/* applying right float */
+.float-right {   
+    max-width: 38%;
+    float: right;
+}
+
+/* START :: styling the common containers */
 .common-container-bar {
     color: white;
     background-color: #145F94;
@@ -41,41 +54,42 @@ nav {
 .common-container-bar, .network-content {
     padding: 20px 30px;
 }
+/* END :: common containers */
+
+/* START :: styling the news channel containers */
+.doordharshan-container {
+    background-color: #F6F6F6;
+    border: 2px solid #145F94;
+}
 
 .sun-container {
-    max-width: 38%;
     background-color: #F6F6F6;
-    float: right;
     border: 2px solid #145F94;
 }
 
 .sony-container {
-    max-width: 60%;
     background-color: #F6F6F6;
-    float: left;
     border: 2px solid #145F94;
 }
 
 .star-container {
-    max-width: 38%;
     background-color: #F6F6F6;
-    float: right;
     border: 2px solid #145F94;
 }
 
 .zee-container {
-    max-width: 60%;
     background-color: #F6F6F6;
-    float: left;
     border: 2px solid #145F94;
 }
 
 .doordharshan-container, .sony-container, .sun-container, .star-container, .zee-container {
     margin-bottom: 30px;
 }
+/* END :: styling the news channel containers */
 
+/* making the page responsive */
 @media only screen and (max-width: 768px){
-    .doordharshan-container, .sony-container, .sun-container, .star-container, .zee-container {
+    .float-left, .float-right {
         max-width: 100%;
     }
 }
