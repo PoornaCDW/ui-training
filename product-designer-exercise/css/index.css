@@ -81,7 +81,17 @@ header h2 {
     display: inline;
 }
 
-.designer-work, .icons {
+.designer-work {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+}
+
+.icons {
     max-width: 80%;
     margin: auto;
     display: flex;
@@ -92,7 +102,6 @@ header h2 {
 
 .images {
     width: 32%;
-    padding-bottom: 30px;
 }
 
 .designer-sponsors {
@@ -119,18 +128,22 @@ header h2 {
 /* styling for icons: border, bordor-radius and flex properties */
 .icons {
     margin: 120px auto;
-    width: 80%;
+    width: 75%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    width: 10%;
+    width: 8%;
 }
 
-.icons img {
+.icons {
     max-height: 80px;
+}
+
+.logo-adidas img {
+    max-height: 100px;
 }
 
 footer hr {
@@ -144,13 +157,17 @@ footer hr {
     justify-content: center;
 }
 
-.line1 {
+.broken-line-1 {
     width: 42px;
+    border-bottom: 1px solid #fff;
     margin-right: 45px;
+    /* display: inline-block; */
 }
 
-.line2 {
+.broken-line-2 {
     width: 264px;
+    border-bottom: 1px solid #fff;
+    /* display: inline-block; */
 }
 
 /* socials icons styling: flex properties, gap and size */
