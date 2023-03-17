@@ -18,12 +18,12 @@ body {
 }
 
 /* header: applying padding for header */
-header {
+.header-email {
     padding: 82px 212px;
 }
 
 /* decendent selector for h2 under header: applying font size and flex property */
-header h2 {
+.header-email h2 {
     font-size: 33px;
     display: flex;
     justify-content: flex-end;
@@ -138,17 +138,8 @@ header h2 {
     width: 8%;
 }
 
-.icons {
-    max-height: 80px;
-}
-
-.logo-adidas img {
+.icons img {
     max-height: 100px;
-}
-
-footer hr {
-    display: inline-block;
-    margin-bottom: 50px;
 }
 
 .for-line {
