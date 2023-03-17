@@ -11,3 +11,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+header h1 {
+    display: flex;
+    justify-content: center;
+}
