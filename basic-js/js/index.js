@@ -47,7 +47,10 @@ displayNumbers();
 
 function displayDate() {
     let currentDate = new Date();
-    console.log("Today's date: ", currentDate.getDate(), "/", currentDate.getMonth()+1, "/", currentDate.getFullYear());
+    let currentDay = currentDate.getDate().toString().padStart(2, 0);
+    let currentMonth = (currentDate.getMonth()+1).toString().padStart(2, 0);
+    let currentYear = currentDate.getFullYear();
+    console.log("Today's date: ", currentDay, "/", currentMonth, "/", currentYear);
 }
 displayDate();
 
@@ -57,13 +60,7 @@ convertToFahrenheit = (celsius) => {
 console.log("Fahrenheit - ", convertToFahrenheit(25));
 
 var array = [10, 89, 67, 12, 44];
-averageOfArray = (arr) => {
-    let avg = 0;
-    for(let num of arr) {
-        avg += num;
-    }
-    return avg/arr.length;
-}
+averageOfArray = (array) => { return array.reduce((a, b) => a + b) / array.length };
 console.log("Average of the array - ", averageOfArray(array));
 
 stringReverse = (str) => {
