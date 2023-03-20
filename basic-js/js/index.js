@@ -52,7 +52,7 @@ function displayDate() {
 displayDate();
 
 convertToFahrenheit = (celsius) => {
-    return (celsius* 9 / 5)+32;
+    return celsius* 9 / 5 + 32;
 }
 console.log("Fahrenheit - ", convertToFahrenheit(25));
 
