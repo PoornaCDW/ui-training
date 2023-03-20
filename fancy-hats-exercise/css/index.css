@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     color: #fff;
     background-image: url("/fancy-hats-exercise/images/background-image.png");
     background-color: rgba(0, 0, 0, 0.3);
@@ -12,7 +12,28 @@ body {
     background-size: cover;
 }
 
-header h1 {
+.page-heading {
+    margin-top: 60px;
     display: flex;
     justify-content: center;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.fancy-hats-establishment {
+    display: flex;
+    justify-content: flex-end;
+    /* margin-right: 90px; */
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+.since {
+    transform: rotate(-90deg);
+}
+
+.year {
+    font-family: 'Roboto Condensed', sans-serif;
+    transform: rotate(-90deg);
+    font-size: 150px;
 }
