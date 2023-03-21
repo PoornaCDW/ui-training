@@ -30,7 +30,7 @@ console.log("Cricket Players after sorting: ", cricketPlayers);
 let jersyNumber = [];
 while(jersyNumber.length < 12) {
     let randNum = Math.floor(Math.random() * 100) + 1;
-    if(jersyNumber.indexOf(randNum === -1))
+    if(jersyNumber.indexOf(randNum) === -1)
         jersyNumber.push(randNum);
 }
 
