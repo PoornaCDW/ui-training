@@ -1,0 +1,233 @@
+/* Universal selector */
+* {
+    /* margin 0 to get the full screen */
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* img: setting max width for all the images */
+img {
+    max-width: 100%;
+}
+
+/* body: applying font family, color and background */
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+/* header: applying padding for header */
+.header-email {
+    padding: 82px 212px;
+}
+
+/* decendent selector for h2 under header: applying font size and flex property */
+.header-email h2 {
+    font-size: 33px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* parent class - designer: applying padding */
+.designer {
+    padding: 64px 0px;
+}
+
+/* designer-name: adding flex property */
+.designer-name {
+    display: flex;
+    justify-content: center;
+}
+
+/* adding font size to the designer's name */
+.designer-name h1 {
+    font-size: 200px;
+}
+
+/* applying styles for the first name of the designer */
+.first-name {
+    font-weight: 100;
+}
+
+/* styling for designer's description, and adding flex property */
+.designer-description {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 16px;
+    letter-spacing: 4px;
+}
+
+/* hidden designer: displayed only in mobile view */
+.designer-email {
+    display: none;
+    margin-top: 30px;
+}
+
+.designer-email h2 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.designer-description h2 {
+    color: #cecece;
+}
+
+.designer-description pre {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #4b8fe2;
+    display: inline;
+}
+
+.designer-work {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+}
+
+.icons {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.images {
+    width: 32%;
+}
+
+.designer-sponsors {
+    margin-top: 146px;
+}
+
+.sponsors-description {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.sponsors-description h2 {
+    color: #cecece;
+}
+
+.sponsors-description pre {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #B8E985;
+    display: inline;
+}
+
+/* styling for icons: border, bordor-radius and flex properties */
+.icons {
+    margin: 120px auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 8%;
+}
+
+.icons img {
+    max-height: 100px;
+}
+
+.for-line {
+    margin-top: 336px;
+    display: flex;
+    justify-content: center;
+}
+
+.broken-line-1 {
+    width: 42px;
+    border-bottom: 1px solid #fff;
+    margin-right: 45px;
+    /* display: inline-block; */
+}
+
+.broken-line-2 {
+    width: 264px;
+    border-bottom: 1px solid #fff;
+    /* display: inline-block; */
+}
+
+/* socials icons styling: flex properties, gap and size */
+.socials {
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    gap: 25px;
+    text-align: center;
+}
+
+.socials i, .M {
+    width: 62px;
+    height: 62px;
+    padding: 10px;
+    border: 1px solid white ;
+    border-radius: 50%;
+}
+
+.M {
+    font-family: 'Blaak ExtraBold PERSONAL USE', sans-serif;
+    padding: 4px;
+}
+
+.coding-quote {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 186px;
+}
+
+/* mobile view manipulations */
+@media screen and (max-width: 475px) {
+    .icons {
+        gap: 50px;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    /* hiding the email on top for mobile view */
+    header {
+        visibility: hidden;
+    }
+
+    /* enabling email in mobile view */
+    .designer-email {
+        display: block;
+    }
+    
+    .images {
+        width: 100%
+    }
+
+    .sponsors-description h2 {
+        font-size: 35px;
+    }
+
+    .designer-work {
+        margin-top: 40px;
+    }
+
+    .designer-name h1 {
+        font-size: 65px;
+    }
+
+    .designer-description h2 {
+        font-size: 35px;
+    }
+}
