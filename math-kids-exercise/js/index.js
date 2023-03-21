@@ -22,8 +22,8 @@ let shapes = {
         textToDisplay: "2. Enter Side",
         tableContents: {
             SIDE: "s",
-            AREA: "s*s",
-            PERIMETER: "4*s"
+            AREA: "s * s",
+            PERIMETER: "4 * s"
         },
         calcArea: (side) => {
             return side*side;
@@ -34,12 +34,12 @@ let shapes = {
     },
     triangle: {
         name: "triangle",
-        title: "Triangle",
+        title: "Equilateral Triangle",
         textToDisplay: "2. Enter Side (Base & Height)",
         tableContents: {
             SIDE: "s",
-            AREA: "0.433*s*s",
-            PERIMETER: "3*s"
+            AREA: "0.433 * s * s",
+            PERIMETER: "3 * s"
         },
         calcArea: (side) => {
             return 0.433*side*side;
