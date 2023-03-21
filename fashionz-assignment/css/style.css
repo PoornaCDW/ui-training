@@ -30,6 +30,10 @@ header {
     padding-left: 31.74px;
 }
 
+.fashionz-logo:hover {
+    cursor: pointer;
+}
+
 /* applying style to the image descenting the logo */
 .fashionz-logo img {
     max-width: 72%;
@@ -131,6 +135,10 @@ header {
     font-size: 26px;
     margin-left: 330px;
     margin-top: 22px;
+}
+
+.fa-star:hover {
+    cursor: pointer;
 }
 
 /* styling the add to cart button */
