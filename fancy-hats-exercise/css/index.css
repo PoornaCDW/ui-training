@@ -33,9 +33,9 @@ body {
 .since {
     transform: rotate(-90deg);
     position: absolute;
-    top: 460px;
-    right: 15px;
-    font-size: 40px;
+    top: 420px;
+    right: 10px;
+    font-size: 46px;
 }
 
 .year {
@@ -43,8 +43,8 @@ body {
     letter-spacing: 4px;
     font-size: 140px;
     position: absolute;
-    top: 170px;
-    right: -50px;
+    top: 130px;
+    right: -56px;
 }
 /* END: company establishment div */
 
@@ -94,6 +94,11 @@ body {
     text-align: center;
 }
 
+.different-hats-avilable a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .different-hats-avilable p {
     cursor: pointer;
 }
@@ -131,4 +136,8 @@ body {
 
 .fa-brands {
     margin-left: 20px;
+}
+
+.fa-brands:hover {
+    cursor: pointer;
 }
