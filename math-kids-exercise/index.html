@@ -23,27 +23,27 @@
         <!-- START :: section-shapes -->
         <section class="section-one">
             <h1 class="choose-shape">1. Choose a Shape</h1>
-            <div id="shapes">
-                <span id="circle" onclick="showNextButton('circle');"><i class="fa-solid fa-check" id="fa-check"></i></span>
-                <span id="triangle" onclick="showNextButton('triangle');"><i class="fa-solid fa-check" id="fa-check"></i></span>
-                <span id="square" onclick="showNextButton('square');"><i class="fa-solid fa-check" id="fa-check"></i></span>
+            <div class="shape" id="shapes">
+                <div class="circle" id="circle"></div>
+                <div class="triangle" id="triangle"></div>
+                <div class="square" id="square"></div>
             </div>
             <div class="next-button">
-                <button id="actionButton" onclick="redirectFromNextButton()">NEXT</button>
+                <button id="nextButton" class="action-button">NEXT</button>
             </div>
         </section>
         <!-- END :: section-shapes -->
         <!-- START :: section-details -->
         <section class="section-two">
-            <h1 id="enter-details-statement"></h1>
+            <h1 id="enterDetailsStatement"></h1>
             <input type="number" id="value" name="value">
-            <button id="actionButton" onclick="calculate()">CALCULATE</button>
+            <button id="calculateButton" class="action-button">CALCULATE</button>
         </section>
         <!-- END :: section-details -->
         <!-- START :: section-metrics -->
         <section class="section-three">
             <div class="metric-table" id="metricTable"></div>
-            <button id="actionButton" class="start-again">START AGAIN</button>
+            <button id="startAgainButton" class="action-button">START AGAIN</button>
         </section>
         <!-- END :: section-metrics -->
         <!-- IMPORT :: javascript file -->

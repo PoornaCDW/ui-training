@@ -9,6 +9,11 @@ body {
     background-color: #000;
 }
 
+.section-one {
+    display: flex;
+    flex-direction: column;
+}
+
 .nav-bar {
     background-color: #A9E087;
     padding: 35px 38px;
@@ -16,10 +21,6 @@ body {
     justify-content: space-between;
     font-size: 25px;
     font-weight: 600;
-}
-
-.section-one {
-    display: none;
 }
 
 .choose-shape {
@@ -31,19 +32,27 @@ body {
     font-size: 65px;
 }
 
-#shapes {
-    padding: 110px 650px;
+.shape {
+    padding: 110px;
+    gap: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    text-align: center;
 }
 
-.fa-check {
+.next-button {
     display: none;
 }
 
-#circle {
+.fa-check {
+    /* display: none; */
+    color: #fff;
+    font-size: 75px;
+    margin-top: 45px;
+}
+
+.circle {
     border-radius: 50%;
     height: 160px;
     width: 160px;
@@ -51,14 +60,15 @@ body {
     cursor: pointer;
 }
 
-#triangle {
-    border-left: 80px solid transparent;
-    border-right: 80px solid transparent;
+.triangle {
+    width: 160px;
+    height: 160px;
+    clip-path: polygon(50% 0,100% 100%,0 100%);
     border-bottom: 160px solid #FFABDC;
     cursor: pointer;
 }
 
-#square {
+.square {
     width: 160px;
     height: 160px;
     background-color: #E0E0E0;
@@ -70,7 +80,7 @@ body {
     justify-content: center;
 }
 
-#actionButton {
+.action-button {
     background-color: #000;
     border: #fff solid 2px;
     color: #fff;
@@ -89,10 +99,9 @@ body {
     display: none;
 }
 
-#enter-details-statement {
+#enterDetailsStatement {
     color: #fff;
-    /* margin-top: 260px; */
-    font-weight: 300;
+    font-weight: 400;
     font-size: 65px;
 }
 
@@ -108,4 +117,37 @@ body {
 
 input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     display: none;
+}
+
+.metric-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.metric-table p {
+    margin-top: 20px;
+    font-size: 65px;
+}
+
+.metric-table table {
+    width: 470px;
+    font-size: 25px;
+    border-spacing: 0px 20px;
+}
+
+.metric-table table td {
+    padding: 10px;
+    background-color: #0D62D6;
+    width: 200px;
+}
+
+.metric-table table td:nth-child(2){
+    background-color: #455D7E;
+    width: 130px;
+}
+
+.metric-table table td:last-child {
+    background-color: #3288FF;
 }
