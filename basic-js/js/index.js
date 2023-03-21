@@ -28,15 +28,14 @@ cricketPlayers.sort();
 console.log("Cricket Players after sorting: ", cricketPlayers);
 
 let jersyNumber = [];
-while(jersyNumber.size !== 11) {
+while(jersyNumber.length < 12) {
     let randNum = Math.floor(Math.random() * 100) + 1;
     if(jersyNumber.indexOf(randNum === -1))
         jersyNumber.push(randNum);
 }
 
-for(playes of cricketPlayers) {
-    for(numbers in jersyNumber)
-        console.log(player + " - " +numbers);
+for(let i=0; i<cricketPlayers.length; i++) {
+    console.log(cricketPlayers[i] + " - " +jersyNumber[i]);
 }
 
 var upperCasePlayers = cricketPlayers.map(player => player.toUpperCase());
