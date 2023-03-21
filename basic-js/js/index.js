@@ -27,10 +27,16 @@ console.log("Cricket Players: ", cricketPlayers);
 cricketPlayers.sort();
 console.log("Cricket Players after sorting: ", cricketPlayers);
 
-var jersyNumber;
-for(let players of cricketPlayers) {
-    jersyNumber = Math.floor(Math.random() * 100);
-    console.log(players, "-", jersyNumber);
+let jersyNumber = [];
+while(jersyNumber.size !== 11) {
+    let randNum = Math.floor(Math.random() * 100) + 1;
+    if(jersyNumber.indexOf(randNum === -1))
+        jersyNumber.push(randNum);
+}
+
+for(playes of cricketPlayers) {
+    for(numbers in jersyNumber)
+        console.log(player + " - " +numbers);
 }
 
 var upperCasePlayers = cricketPlayers.map(player => player.toUpperCase());
@@ -60,7 +66,9 @@ convertToFahrenheit = (celsius) => {
 console.log("Fahrenheit - ", convertToFahrenheit(25));
 
 var array = [10, 89, 67, 12, 44];
-averageOfArray = (array) => { return array.reduce((a, b) => a + b) / array.length };
+averageOfArray = (array) => { 
+    return array.reduce((a, b) => a + b) / array.length; 
+}
 console.log("Average of the array - ", averageOfArray(array));
 
 stringReverse = (str) => {
