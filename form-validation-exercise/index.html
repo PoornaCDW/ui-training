@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Page Title -->
+        <title>Form Validation</title>
+        <!-- IMPORT :: Open Sans Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+        <!-- IMPORT :: stylesheet -->
+        <link rel="stylesheet" href="/form-validation-exercise/css/index.css">
+    </head>
+    <body>
+        <!-- START :: nav-bar -->
+        <nav class="nav-bar">
+            <img src="/form-validation-exercise/images/Sirius_CDW.svg" alt="">
+        </nav>
+        <!-- END :: nav-bar -->
+        <!-- START :: section - form -->
+        <section class="form">
+            <!-- START :: form -->
+            <form method="post" id="billingForm">
+                <h3 class="form-heading">BILLING DETAILS</h3>
+                <div class="inline-input">
+                    <div class="float-left">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName">
+                        <p class="empty-error-message remove-display" id="firstNameErrorMessage"></p>
+                    </div>
+                    <div class="float-right">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName">
+                        <p class="empty-error-message remove-display" id="lastNameErrorMessage">Last Name is required</p>
+                    </div>
+                </div>
+                <div class="fit-container">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email">
+                    <p class="empty-error-message remove-display" id="emailErrorMessage">Email Address is required</p>
+                </div>
+                <div class="fit-container">
+                    <label for="contactNumber">Contact Number</label>
+                    <input type="number" name="contactNumber" id="contactNumber">
+                    <p class="empty-error-message remove-display" id="contactNumberErrorMessage">Contact Number is required</p>
+                </div>
+                <div class="fit-container">
+                    <label for="pinCode">Pincode</label>
+                    <input type="number" name="pinCode" id="pinCode">
+                    <p class="empty-error-message remove-display" id="pinCodeErrorMessage">PIN Code is required</p>
+                </div>
+                <h3 class="payment-heading">PAYMENT DETAILS</h3>
+                <div class="fit-container">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="number" name="cardNumber" id="cardNumber">
+                    <p class="empty-error-message remove-display" id="cardNumberErrorMessage">Card Number is required</p>
+                </div>
+                <div class="inline-input">
+                    <div class="float-left">
+                        <label for="cardExpiry">Card Expiry (Year)</label>
+                        <input type="number" name="cardExpiry" id="cardExpiry">
+                        <p class="empty-error-message remove-display" id="cardExpiryErrorMessage">Card Expiry is required</p>
+                    </div>
+                    <div class="float-right">
+                        <label for="cvv">CVV</label>
+                        <input type="number" name="cvv" id="cvv">
+                        <p class="empty-error-message remove-display" id="cvvErrorMessage">CVV is required</p>
+                    </div>
+                </div>
+                <button type="submit" id="completePayment">COMPLETE PAYMENT</button>
+            </form>
+            <!-- END :: form -->
+        </section>
+        <!-- END :: section -->
+        <!-- IMPORT :: JavaScript  -->
+        <script src="/form-validation-exercise/js/index.js"></script>
+        <!-- Displayed when JavaScript is not enabled -->
+        <noscript>JavaScript has not been enabled!</noscript>
+    </body>
+</html>
