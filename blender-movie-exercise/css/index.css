@@ -72,6 +72,11 @@ body {
     border-bottom: 1px solid #D6D6D6;
 }
 
+.horizontal-line-2 {
+    margin: 20px 0;
+    border-bottom: 1px solid #D6D6D6;
+}
+
 .movie-comments {
     display: flex;
     flex-direction: column;
@@ -154,4 +159,41 @@ body {
 
 .footer h4:last-child {
     font-weight: 400;
+}
+
+@media only screen and (max-width: 767px) {
+    .nav-bar {
+        padding: 10px 5%;
+        /* display: none; */
+    }
+
+    .user-container p {
+        display: none;
+    }
+
+    .fluid-container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .movie-display-container {
+        width: 100%;
+    }
+
+    .upcoming-movies {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer > h4:first-child {
+        font-size: 20px;
+    }
+
+    .footer > h4:last-child {
+        font-size: 30px;
+        font-weight: bold;
+    }
 }
