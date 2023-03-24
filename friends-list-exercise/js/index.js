@@ -6001,11 +6001,11 @@ const frindsList = [
     }
 ]
 
-let friendContainer = document.getElementById("friendContainer");
+const friendContainer = document.getElementById("friendContainer");
 
 let cardContent = "";
 
-for (let singleFriendDetails of frindsList) {
+for (const singleFriendDetails of frindsList) {
     cardContent += '<div class="card"><div class="image">';
     cardContent += '<img src="' + singleFriendDetails.img + '" alt="Friends image" /></div>';
     cardContent += '<div class="friends-details">';
