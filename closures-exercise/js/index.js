@@ -117,8 +117,9 @@
     function selectOption() {
         let option = parseInt(prompt("Enter your choice: \n\n1.Check your balance. \n2.Withdraw Cash. \n3.Deposit Cash. \n4.Exit"));
         
-        if(option == 1 || option == 2 || option == 3 || option == 4) {
+        if(option === 1 || option === 2 || option === 3 || option === 4) {
             optionSelector(option);
+            selectOption();
         } else {
             window.alert("Invalid input!");
             selectOption();
