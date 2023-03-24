@@ -31,6 +31,93 @@
             accountBalance: 87000
         }
     ]
+    
+    let selectOption = () => {
+        let option = parseInt(prompt("Enter your choice: \n\n1.Check your balance. \n2.Withdraw Cash. \n3.Deposit Cash."));
+        
+        if(option == 1 || option == 2 || option == 3) {
+            return option;
+        } else {
+            window.alert("Invalid input!");
+            selectOption();
+        }
 
-    console.log(bankAccounts);
+    }
+
+    let optionSelector = (selectOption) => {
+        if(selectOption === 1) {
+            let accountNumber = parseInt(prompt("Enter account number"));
+            let cardNumber = parseInt(prompt("Enter card number"));
+            let pinNumber = parseInt(prompt("Enter you secure PIN number"));
+
+            if(validateAccount(accountNumber, cardNumber, pinNumber)) {
+                window.prompt(checkBalance(accountNumber));
+                optionSelector(selectOption);
+            } else {
+                window.prompt("Details entered doesn't match, please re-enter the correct details!");
+                optionSelector(selectOption);
+            }
+        } else if(selectOption === 2) {
+            let accountNumber = parseInt(prompt("Enter account number"));
+            let cardNumber = parseInt(prompt("Enter card number"));
+            let pinNumber = parseInt(prompt("Enter you secure PIN number"));
+
+            if(validateAccount(accountNumber, cardNumber, pinNumber)) {
+                let withdrawalAmount = parseInt(prompt("Enter withdrawal amount"));
+                atmMachine(accountNumber, withdrawalAmount);
+                optionSelector(selectOption);
+            } else {
+                window.prompt("Details entered doesn't match, please re-enter the correct details!");
+                optionSelector(selectOption);
+            }
+        } else if(selectOption === 3) {
+            let accountNumber = parseInt(prompt("Enter account number"));
+            let cardNumber = parseInt(prompt("Enter card number"));
+            let pinNumber = parseInt(prompt("Enter you secure PIN number"));
+
+            if(validateAccount(accountNumber, cardNumber, pinNumber)) {
+                let depositAmount = parseInt(prompt("Enter deposit amount"));
+                cashDepositMachine(accountNumber, depositAmount);
+                optionSelector(selectOption);
+            } else {
+                window.prompt("Details entered doesn't match, please re-enter the correct details!");
+                optionSelector(selectOption);
+            }
+        }
+    }
+
+    let validateAccount = (accountNumber, cardNumber, pinNumber) => {
+        for(accounts of bankAccounts) {
+            if(accounts.accountNumber === accountNumber && accounts.cardNumber === cardNumber && accounts.atmPin == pinNumber) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    let checkBalance = (accountNumber) => {
+        for(accounts of bankAccounts) {
+            if(accounts.accountNumber === accountNumber) {
+                return accounts.accountBalance;
+            }
+        }
+    }
+
+    let atmMachine = (accountNumber, withdrawalAmount) => {
+        for(accounts of bankAccounts) {
+            if(accounts.accountNumber === accountNumber) {
+                accounts.accountBalance -= withdrawalAmount;
+                window.alert("Withdrawal was successful! \nNew Balance: "+checkBalance(accountNumber));
+            }
+        }
+    }
+
+    let cashDepositMachine = (accountNumber, depositAmount) => {
+        for(accounts of bankAccounts) {
+            if(accounts.accountNumber === accountNumber) {
+                accounts.accountBalance += depositAmount;
+                window.alert("Deposit was successful! \nNew Balance: "+checkBalance(accountNumber));
+            }
+        }
+    }
 })();
