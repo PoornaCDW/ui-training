@@ -10,6 +10,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
         <!-- IMPORT :: stylesheet -->
         <link rel="stylesheet" href="/form-validation-exercise/css/index.css">
+        <!-- IMPORT :: JavaScript  -->
+        <script src="/form-validation-exercise/js/index.js" defer></script>
     </head>
     <body>
         <!-- START :: nav-bar -->
@@ -25,7 +27,7 @@
                 <div class="inline-input">
                     <div class="float-left">
                         <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" id="firstName">
+                        <input class="error-bordor-color" type="text" name="firstName" id="firstName">
                         <p class="empty-error-message remove-display" id="firstNameErrorMessage"></p>
                     </div>
                     <div class="float-right">
@@ -72,8 +74,6 @@
             <!-- END :: form -->
         </section>
         <!-- END :: section -->
-        <!-- IMPORT :: JavaScript  -->
-        <script src="/form-validation-exercise/js/index.js"></script>
         <!-- Displayed when JavaScript is not enabled -->
         <noscript>JavaScript has not been enabled!</noscript>
     </body>
