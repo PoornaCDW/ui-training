@@ -42,6 +42,9 @@ let upcomingProjects = document.getElementById("upcomingProjects");
     movieCommentsHeading.innerHTML = "Comments";
     movieCommentsContainer.appendChild(movieCommentsHeading);
 
+    // Creating a data fragment for the reviews
+    let reviewContainerDataFragment = document.createDocumentFragment();
+
     for(let comments of videoJsonContent.comments) {
         console.log(comments.image);
         let reviewerContainer = document.createElement("div");
@@ -66,10 +69,11 @@ let upcomingProjects = document.getElementById("upcomingProjects");
         review.innerHTML = comments.comment;
         reviewerDetails.appendChild(review);
 
-        movieCommentsContainer.appendChild(reviewerContainer);
+        reviewContainerDataFragment.appendChild(reviewerContainer);
     }
 
-    console.log("hello");
+    // Pushing the whole datafragment containing all the reviews to the container
+    movieCommentsContainer.appendChild(reviewContainerDataFragment);
 
     let upcomingProjectsTitle = document.createElement("h3");
     upcomingProjectsTitle.innerHTML = "Upcoming Projects";
@@ -78,12 +82,19 @@ let upcomingProjects = document.getElementById("upcomingProjects");
     let upcomingMoviesImages = document.createElement("div");
     upcomingMoviesImages.className = "upcoming-movies-images";
 
+    // Creating a data fragment for the posters
+    let posterImageDataFragment = document.createDocumentFragment();
+
     for(let posters of posterJsonContent) {
         let posterImage = document.createElement("img");
         posterImage.src = posters.imageUrl;
         posterImage.alt = posters.title;
-        upcomingMoviesImages.appendChild(posterImage);
+        
+        posterImageDataFragment.appendChild(posterImage);
     }
 
+    // Pushing the whole datafragment containing all the posters to the container
+    upcomingMoviesImages.appendChild(posterImageDataFragment);
+    
     upcomingProjects.appendChild(upcomingMoviesImages);
 })();

@@ -2,13 +2,20 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Page Title -->
         <title>Blender Movie</title>
+        <!-- IMPORT :: Open Sans Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <!-- IMPORT :: style sheet -->
         <link rel="stylesheet" href="/blender-movie-exercise/css/index.css" />
+        <!-- IMPORT :: JavaSript File -->
+        <script type="module" src="/blender-movie-exercise/js/index.js" defer></script>
     </head>
+    <!-- START :: body -->
     <body>
+        <!-- START :: nav-bar -->
         <nav class="nav-bar">
             <h3>Blender Movies</h3>
             <div class="user-container">
@@ -16,24 +23,32 @@
                 <img src="/blender-movie-exercise/images/user-image.png" alt="Steffy Jerry Image" />
             </div>
         </nav>
+        <!-- END :: nav-bar -->
+        <!-- START :: section - page contents -->
         <section class="fluid-container">
-            <div class="movie-display-container" id="movieDisplayContainer">
-            </div>
-            <div class="horizontal-line-2"></div>
-            <div class="upcoming-movies" id="upcomingProjects">
+            <article class="movie-display-container" id="movieDisplayContainer">
+            </article>
+            <article class="horizontal-line-2"></article>
+            <article class="upcoming-movies" id="upcomingProjects">
                 <!-- <h3>Upcoming Movies</h3> -->
-            </div>
+            </article>
         </section>
-        <div class="chat-icon">
+        <!-- END :: section - page contents -->
+        <!-- START :: section -chat-icon -->
+        <section class="chat-icon">
             <a href="#"><img src="/blender-movie-exercise/images/chat-icon.png" alt="Chatbot Icon"></a>
-        </div>
+        </section>
+        <!-- END :: section - chat-icon -->
+        <!-- START :: footer -->
         <footer class="footer">
             <h4>&copy; Copyrights 2022</h4>
             <h4>Blender Movies</h4>
         </footer>
-        <script type="module" src="/blender-movie-exercise/js/index.js"></script>
+        <!-- END :: footer -->
+        <!-- Alternate message for the absense of JavaScript -->
         <noscript>Please enable JavaScript!</noscript>
     </body>
+    <!-- END :: body -->
 </html>
 
             <!-- <div class="movie-display-container">
