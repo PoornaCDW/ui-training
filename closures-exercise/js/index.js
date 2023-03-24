@@ -52,8 +52,13 @@
     let atmMachine = (accountNumber, withdrawalAmount) => {
         for(accounts of bankAccounts) {
             if(accounts.accountNumber === accountNumber) {
-                accounts.accountBalance -= withdrawalAmount;
-                window.alert("Withdrawal was successful! \nNew Balance: "+checkBalance(accountNumber));
+                if(withdrawalAmount <= checkBalance(accountNumber)) {
+                    accounts.accountBalance -= withdrawalAmount;
+                    window.alert("Withdrawal was successful! \nNew Balance: "+checkBalance(accountNumber));
+                } else {
+                    window.alert("Not enough balance for the transaction!");
+                    return;
+                }
             }
         }
     }
@@ -75,8 +80,6 @@
 
             if(validateAccount(accountNumber, cardNumber, pinNumber)) {
                 window.alert(checkBalance(accountNumber));
-                // optionSelector(selectOption);
-                // selectOption();
             } else {
                 window.alert("Details entered doesn't match, please re-enter the correct details!");
                 optionSelector(selectOption);
@@ -89,8 +92,6 @@
             if(validateAccount(accountNumber, cardNumber, pinNumber)) {
                 let withdrawalAmount = parseInt(prompt("Enter withdrawal amount"));
                 atmMachine(accountNumber, withdrawalAmount);
-                // optionSelector(selectOption);
-                // selectOption();
             } else {
                 window.alert("Details entered doesn't match, please re-enter the correct details!");
                 optionSelector(selectOption);
@@ -103,28 +104,27 @@
             if(validateAccount(accountNumber, cardNumber, pinNumber)) {
                 let depositAmount = parseInt(prompt("Enter deposit amount"));
                 cashDepositMachine(accountNumber, depositAmount);
-                // optionSelector(selectOption);
-                // selectOption();
             } else {
                 window.alert("Details entered doesn't match, please re-enter the correct details!");
                 optionSelector(selectOption);
             }
         } else if(selectOption === 4) {
-            window.alert("Exit!!");
+            window.alert("Thank You!! \nVIsit Again!");
         }
     }
     
     function selectOption() {
         let option = parseInt(prompt("Enter your choice: \n\n1.Check your balance. \n2.Withdraw Cash. \n3.Deposit Cash. \n4.Exit"));
         
-        if(option === 1 || option === 2 || option === 3 || option === 4) {
+        if(option === 1 || option === 2 || option === 3) {
             optionSelector(option);
             selectOption();
+        } else if(option === 4) {
+            optionSelector(option);
         } else {
             window.alert("Invalid input!");
             selectOption();
         }
     }
     selectOption();
-
 })();
