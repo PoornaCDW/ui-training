@@ -1,5 +1,4 @@
 // Onclick validate function
-
 /* The above code is validating the form fields. */
 document.getElementById("completePayment").addEventListener("click", (clickEvent) => {
     /* Preventing the default action of the event. */
@@ -129,7 +128,7 @@ document.getElementById("completePayment").addEventListener("click", (clickEvent
         document.getElementById("cardExpiry").style.borderColor = errorBordorColor;
         cardExpiryErrorMessage.classList.remove("remove-display");
         forReset++;
-    } else if(!/^[0-9]\d{3}$/.test(cardExpiry.value) || cardExpiry.value < currentDate.getFullYear()) {
+    } else if((!/^[0-9]\d{3}$/.test(cardExpiry.value)) || (cardExpiry.value < currentDate.getFullYear())) {
         cardExpiryErrorMessage.innerHTML = "Card Expiry is not valid";
         document.getElementById("cardExpiry").style.borderColor = errorBordorColor;
         cardExpiryErrorMessage.classList.remove("remove-display");
