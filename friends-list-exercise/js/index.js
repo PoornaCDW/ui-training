@@ -6007,10 +6007,10 @@ let cardContent = "";
 
 for (const singleFriendDetails of frindsList) {
     cardContent += '<div class="card"><div class="image">';
-    cardContent += '<img src="' + singleFriendDetails.img + '" alt="Friends image" /></div>';
+    cardContent += `<img src=${singleFriendDetails.img} alt="Friends image" /></div>`;
     cardContent += '<div class="friends-details">';
-    cardContent += '<p class="friend-full-name">' + singleFriendDetails.first_name + " " + singleFriendDetails.last_name + "</p>";
-    cardContent += '<p class="friend-email-address">' + singleFriendDetails.email + "</p></div></div>";
+    cardContent += `<p class="friend-full-name">${singleFriendDetails.first_name} ${singleFriendDetails.last_name}</p>`;
+    cardContent += `<p class="friend-email-address">${singleFriendDetails.email}</p></div></div>`;
 }
 
 friendContainer.innerHTML = cardContent;
