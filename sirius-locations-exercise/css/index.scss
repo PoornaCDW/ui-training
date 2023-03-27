@@ -1,6 +1,113 @@
-$backgroundColor: #F5F5F5;
-$currentTabColor: #001B71;
-$defaultTabColor: #000;
-$colapsableContentTabColor: #818EB9;
-$tableOddColor: #EEEEEE;
-$tableEvenColor: #F2D9F7;
+// $backgroundColor: #F5F5F5;
+// $currentTabColor: #001B71;
+// $defaultTabColor: #000;
+// $colapsableContentTabColor: #818EB9;
+// $tableOddColor: #EEEEEE;
+// $tableEvenColor: #F2D9F7;
+
+$color_1: #FFF;
+$color_2: #fff;
+$background-color_1: #F5F5F5;
+$background-color_2: #000;
+$background-color_3: #001B71;
+$background-color_4: #818EB9;
+$background-color_5: #F2D9F7;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: $background-color_1;
+	font-size: 14px;
+	font-weight: 100;
+}
+.fluid-container {
+    width: 632px;
+    margin: auto;
+}
+header {
+	width: 15%;
+	margin: auto;
+}
+#sirius-corp {
+	width: 100%;
+}
+#tabs {
+	border: none;
+	padding: 0;
+	ul {
+		.ui-state-default {
+			background-color: $background-color_2;
+		}
+		.ui-state-active {
+			background-color: $background-color_3;
+		}
+		width: 100%;
+		background-color: $background-color_1;
+		border: none;
+		padding-left: 25px;
+		li {
+			margin: auto 6px;
+			a {
+				color: $color_1;
+			}
+		}
+	}
+}
+#tabs-1 {
+	img {
+		margin: 25px auto auto;
+	}
+	p {
+		margin: 5px auto auto;
+		line-height: 1.5;
+	}
+	height: 630px;
+	box-shadow: 0px 0px 10px #e2e2e2;
+}
+table {
+	margin: auto auto 60px;
+	width: 100%;
+	font-size: 12px;
+	font-weight: 200;
+	border: 0;
+	border-spacing: 0 10px;
+	td {
+		padding: 5px 14px;
+		&:first-of-type {
+			width: 80px;
+		}
+		&:last-child {
+			text-align: right;
+		}
+	}
+	img {
+		width: 27px;
+	}
+}
+#tabs-2 {
+	height: 630px;
+	box-shadow: 0px 0px 10px #e2e2e2;
+	h3 {
+		color: $color_2;
+	}
+	.ui-state-default {
+		background-color: $background-color_4;
+	}
+}
+#tabs-3 {
+	max-height: 630px;
+	box-shadow: 0px 0px 10px #e2e2e2;
+	overflow: auto;
+}
+
+tr {
+    &:nth-of-type(even) {
+        background-color: $background-color_5;
+    }
+    &:nth-of-type(odd) {
+        background-color: $background-color_1;
+    }
+}
