@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Page Title -->
+        <title>Math Kids</title>
+        <!-- IMPORT :: Source Sans Pro Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet" />
+        <!-- IMPORT :: font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- IMPORT :: style sheet -->
+        <link rel="stylesheet" href="/math-kids-exercise/css/index.css" />
+    </head>
+    <body>
+        <!-- START :: nav -->
+        <nav class="nav-bar">
+            <span>MATH KIDS</span>
+            <span>KIDS LEARNING APPS</span>
+        </nav>
+        <!-- END :: nav -->
+        <!-- START :: section-shapes -->
+        <section class="section-one">
+            <h1 class="choose-shape">1. Choose a Shape</h1>
+            <div class="shape" id="shapes">
+                <div class="circle" id="circle"></div>
+                <div class="triangle" id="triangle"></div>
+                <div class="square" id="square"></div>
+            </div>
+            <div class="next-button">
+                <button id="nextButton" class="action-button">NEXT</button>
+            </div>
+        </section>
+        <!-- END :: section-shapes -->
+        <!-- START :: section-details -->
+        <section class="section-two">
+            <h1 id="enterDetailsStatement"></h1>
+            <input type="number" id="value" name="value">
+            <button id="calculateButton" class="action-button">CALCULATE</button>
+        </section>
+        <!-- END :: section-details -->
+        <!-- START :: section-metrics -->
+        <section class="section-three">
+            <div class="metric-table" id="metricTable"></div>
+            <button id="startAgainButton" class="action-button">START AGAIN</button>
+        </section>
+        <!-- END :: section-metrics -->
+        <!-- IMPORT :: javascript file -->
+        <script src="/math-kids-exercise/js/index.js"></script>
+        <!-- Displayed when javascript is not enabled -->
+        <noscript>JavaScript has not been enabled, please enable it.</noscript>
+    </body>
+</html>
