@@ -1,0 +1,228 @@
+/* Unversal selector: to specify the box size */
+* {
+    box-sizing: border-box;
+}
+
+/* body: applying styles for the body */
+body {
+    max-width: 100%;
+    margin: 0;
+    background-color: #2A2B30;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header: align and set the margin */
+header {
+    margin: auto;
+    max-width: 87.2%;
+}
+
+/* main-section: div styling to maintain the margin */
+.main-section {
+    margin: 62px auto 100px auto;
+}
+
+/* fasion-logo: styling for the logo */
+.fashionz-logo {
+    float: left;
+    padding-top: 92px;
+    padding-left: 31.74px;
+}
+
+.fashionz-logo:hover {
+    cursor: pointer;
+}
+
+/* applying style to the image descenting the logo */
+.fashionz-logo img {
+    max-width: 72%;
+}
+
+/* applying styles to the parent of the white icon holding the dropdown menu */
+.icon-container {
+    float: right;
+    padding-bottom: 28px;
+    position: relative;
+}
+
+/* icon: styling the icon */
+.icon {
+    background-color: #d8d8d8;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 78px 7px 0px 0px;
+}
+
+/* icon: changing the cusor -> pointer */
+.icon:hover {
+    cursor: pointer;
+}
+
+/* menu-contents: styling the drop down menu */
+.menu-contents {
+    display: none;
+    position: absolute;
+    top: 178px;
+    right: 0px;
+    z-index: 1;
+    width: 310px;
+    max-height: 212px;
+    background-color: #fff;
+}
+
+/* styling the drop down menu: ul descendent */
+.menu-contents ul {
+    list-style: none;
+    font-size: 20px;
+    padding-left: 0;
+    font-weight: 700;
+}
+
+/* styling the drop down menu: li descendent */
+.menu-contents li {
+    background-color: #fff;
+    color: #000;
+    padding: 0px 0px 32px 33px;
+}
+
+/* removing anchor default styling */
+.menu-action {
+    text-decoration: none;
+    color: #000;
+}
+
+/* display dropdown on hover */
+.icon-container:hover .menu-contents{
+    display: block;
+}
+
+/* row styling */
+.row {
+    display: block;
+    margin-left: 170px;
+}
+/* card styling */
+.card {
+    background-color: #24252A;
+    display: inline-block;
+    width: 384px;
+    height: 480px;
+    margin-right: 60px;
+}
+
+/* clear-fix: properties */
+.clear-fix {
+    clear: both;
+}
+
+/* styling the container holding the image */
+.product-image {
+    background-color: #24252A;
+    position: relative;
+    width: 290px;
+    height: 290px;
+    object-fit: contain;
+    left: 50px;
+    top: 50px;
+}
+
+/* styling the imported start */
+.fa-star {
+    background-color: #24252A;
+    color: #88B281;
+    font-size: 26px;
+    margin-left: 330px;
+    margin-top: 22px;
+}
+
+.fa-star:hover {
+    cursor: pointer;
+}
+
+/* styling the add to cart button */
+.add-to-cart {
+    color: #AAAAAA;
+    border-color: #AAAAAA;
+    border-style: solid;
+    padding: 12px 24px;
+    font-size: 20px;
+    border-width: 1px;
+    font-weight: 400;
+    margin-top: 20px;
+    background-color: #2A2B30;
+}
+
+/* changing the cursor on hover */
+.add-to-cart:hover {
+    cursor: pointer;
+}
+
+/* styling the product-name container */
+.product-name {
+    font-size: 28px;
+    margin-bottom: 8px;
+    margin-top: 18px;
+}
+
+/* styling the product-price container */
+.product-price {
+    margin-bottom: 0;
+    color: #AAAAAA;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+/* styling the product-attributes container */
+.product-attributes {
+    display: inline-block;
+    width: 384px;
+    height: 230px;
+    margin-right: 60px;
+}
+
+/* styling the product-size container */
+.product-size {
+    background-color: #88B281;
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 105px;
+    margin-left: 270px;
+    font-weight: 500;
+    padding: 20px;
+    color: #000;
+}
+
+/* footer: styling the footer */
+footer {
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* footer-bar: styling */
+.footer-bar {
+    background-color: #000;
+    max-height: 130px;
+    color: #fff;
+    padding: 52px 0px 52px 664px;
+}
+
+.footer-bar span {
+    background-color: #000;
+    font-size: 28px;
+    font-weight: 400;
+    padding-right: 72px;
+}
+
+/* mouse hover effect */
+.footer-bar span:hover {
+    cursor: pointer;
+}
