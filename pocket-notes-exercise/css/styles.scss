@@ -1,0 +1,16 @@
+$bodyBackgroundColor: #000;
+$navBarColor: #041D2E;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bodyBackgroundColor;
+}
+
+.nav-bar {
+    background-color: #041D2E;
+}
