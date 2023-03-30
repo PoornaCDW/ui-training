@@ -3,11 +3,227 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pocket Notes</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/pocket-notes-exercise/css/index.css">
     </head>
     <body>
-        <nav class="nav-bar">
-            
+        <nav class="nav-bar" id="navBar">
+            <div class="float-left">
+                <h3>Pocket Notes</h3>
+            </div>
+            <div class="float-right">
+                <button id="deleteAllButton">DELETE ALL</button>
+                <button id="deleteButton">DELETE</button>
+                <button id="editButton">EDIT</button>
+                <button id="newButton">NEW</button>
+            </div>
         </nav>
+        <section class="dimming-effect"></section>
+        <section class="cards-container" id="cardsContainer">
+            <article class="card">
+                <h2 class="card-heading">Summer Time - A Long Short Story</h2>
+                <h4 class="date">Mar 11, 2022</h4>
+                <p class="notes">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus dignissimos reprehenderit 
+                    deleniti ipsum! Voluptates culpa maxime officiis! Eaque, atque laudantium praesentium, delectus odit 
+                    culpa ipsam nam aperiam officia neque commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptates nulla officia, consequatur ipsam facere provident, facilis voluptatibus numquam eos architecto 
+                    veritatis ea recusandae ullam natus perspiciatis nobis expedita consequuntur aliquid.
+                </p>
+            </article>
+            <article class="card">
+                <h2 class="card-heading">Summer Time - A Long Short Story</h2>
+                <h4 class="date">Mar 11, 2022</h4>
+                <p class="notes">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus dignissimos reprehenderit 
+                    deleniti ipsum! Voluptates culpa maxime officiis! Eaque, atque laudantium praesentium, delectus odit 
+                    culpa ipsam nam aperiam officia neque commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptates nulla officia, consequatur ipsam facere provident, facilis voluptatibus numquam eos architecto 
+                    veritatis ea recusandae ullam natus perspiciatis nobis expedita consequuntur aliquid.
+                </p>
+            </article>
+            <article class="card">
+                <h2 class="card-heading">Summer Time - A Long Short Story</h2>
+                <h4 class="date">Mar 11, 2022</h4>
+                <p class="notes">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus dignissimos reprehenderit 
+                    deleniti ipsum! Voluptates culpa maxime officiis! Eaque, atque laudantium praesentium, delectus odit 
+                    culpa ipsam nam aperiam officia neque commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptates nulla officia, consequatur ipsam facere provident, facilis voluptatibus numquam eos architecto 
+                    veritatis ea recusandae ullam natus perspiciatis nobis expedita consequuntur aliquid.
+                </p>
+            </article>
+            <article class="card">
+                <h2 class="card-heading">Summer Time - A Long Short Story</h2>
+                <h4 class="date">Mar 11, 2022</h4>
+                <p class="notes">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus dignissimos reprehenderit 
+                    deleniti ipsum! Voluptates culpa maxime officiis! Eaque, atque laudantium praesentium, delectus odit 
+                    culpa ipsam nam aperiam officia neque commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptates nulla officia, consequatur ipsam facere provident, facilis voluptatibus numquam eos architecto 
+                    veritatis ea recusandae ullam natus perspiciatis nobis expedita consequuntur aliquid.
+                </p>
+            </article>
+            <article class="card">
+                <h2 class="card-heading">Summer Time - A Long Short Story</h2>
+                <h4 class="date">Mar 11, 2022</h4>
+                <p class="notes">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus dignissimos reprehenderit 
+                    deleniti ipsum! Voluptates culpa maxime officiis! Eaque, atque laudantium praesentium, delectus odit 
+                    culpa ipsam nam aperiam officia neque commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptates nulla officia, consequatur ipsam facere provident, facilis voluptatibus numquam eos architecto 
+                    veritatis ea recusandae ullam natus perspiciatis nobis expedita consequuntur aliquid.
+                </p>
+            </article>
+            <article class="card">
+                <h2 class="card-heading">Summer Time - A Long Short Story</h2>
+                <h4 class="date">Mar 11, 2022</h4>
+                <p class="notes">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus dignissimos reprehenderit 
+                    deleniti ipsum! Voluptates culpa maxime officiis! Eaque, atque laudantium praesentium, delectus odit 
+                    culpa ipsam nam aperiam officia neque commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptates nulla officia, consequatur ipsam facere provident, facilis voluptatibus numquam eos architecto 
+                    veritatis ea recusandae ullam natus perspiciatis nobis expedita consequuntur aliquid.
+                </p>
+            </article>
+            <article class="card">
+                <h2 class="card-heading">Summer Time - A Long Short Story</h2>
+                <h4 class="date">Mar 11, 2022</h4>
+                <p class="notes">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus dignissimos reprehenderit 
+                    deleniti ipsum! Voluptates culpa maxime officiis! Eaque, atque laudantium praesentium, delectus odit 
+                    culpa ipsam nam aperiam officia neque commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptates nulla officia, consequatur ipsam facere provident, facilis voluptatibus numquam eos architecto 
+                    veritatis ea recusandae ullam natus perspiciatis nobis expedita consequuntur aliquid.
+                </p>
+            </article>
+            <article class="card">
+                <h2 class="card-heading">Summer Time - A Long Short Story</h2>
+                <h4 class="date">Mar 11, 2022</h4>
+                <p class="notes">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus dignissimos reprehenderit 
+                    deleniti ipsum! Voluptates culpa maxime officiis! Eaque, atque laudantium praesentium, delectus odit 
+                    culpa ipsam nam aperiam officia neque commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptates nulla officia, consequatur ipsam facere provident, facilis voluptatibus numquam eos architecto 
+                    veritatis ea recusandae ullam natus perspiciatis nobis expedita consequuntur aliquid.
+                </p>
+            </article>
+            <article class="card">
+                <h2 class="card-heading">Summer Time - A Long Short Story</h2>
+                <h4 class="date">Mar 11, 2022</h4>
+                <p class="notes">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus dignissimos reprehenderit 
+                    deleniti ipsum! Voluptates culpa maxime officiis! Eaque, atque laudantium praesentium, delectus odit 
+                    culpa ipsam nam aperiam officia neque commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptates nulla officia, consequatur ipsam facere provident, facilis voluptatibus numquam eos architecto 
+                    veritatis ea recusandae ullam natus perspiciatis nobis expedita consequuntur aliquid.
+                </p>
+            </article>
+            <article class="card">
+                <h2 class="card-heading">Summer Time - A Long Short Story</h2>
+                <h4 class="date">Mar 11, 2022</h4>
+                <p class="notes">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus dignissimos reprehenderit 
+                    deleniti ipsum! Voluptates culpa maxime officiis! Eaque, atque laudantium praesentium, delectus odit 
+                    culpa ipsam nam aperiam officia neque commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Voluptates nulla officia, consequatur ipsam facere provident, facilis voluptatibus numquam eos architecto 
+                    veritatis ea recusandae ullam natus perspiciatis nobis expedita consequuntur aliquid.
+                </p>
+            </article>
+        </section>
+        <div class="load-more">
+            <button class="load-more-button" id="loadMoreButton">LOAD MORE</button>
+        </div>
+        <section class="empty-container">
+            <img src="/pocket-notes-exercise/images/cube-icon.PNG" alt="">
+            <h2 class="empty-container-heading">Notes you add appear here</h2>
+        </section>
+        <section class="expanded-card">
+            <article class="card-contents-container">
+                <div class="color-circle"></div>
+                <div class="content">
+                    <h1 class="content-heading">Summer Time - A Long Short Story</h1>
+                    <h4 class="content-date">Mar 11, 2022</h4>
+                    <p class="content-parah">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ipsa ut odit molestias maxime eaque provident numquam dolorem magni 
+                        deleniti ipsam! Ipsa consequatur quo perspiciatis saepe sapiente ipsum 
+                        dicta distinctio nisi. Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Maiores quia fuga, laudantium autem molestiae ab unde quas pariatur, 
+                        fugit eligendi, vitae quisquam impedit quam aliquam ipsam numquam dolorem 
+                        commodi cumque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ipsa ut odit molestias maxime eaque provident numquam dolorem magni 
+                        deleniti ipsam! Ipsa consequatur quo perspiciatis saepe sapiente ipsum 
+                        dicta distinctio nisi. Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Maiores quia fuga, laudantium autem molestiae ab unde quas pariatur, 
+                        fugit eligendi, vitae quisquam impedit quam aliquam ipsam numquam dolorem 
+                        commodi cumque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ipsa ut odit molestias maxime eaque provident numquam dolorem magni 
+                        deleniti ipsam! Ipsa consequatur quo perspiciatis saepe sapiente ipsum 
+                        dicta distinctio nisi. Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Maiores quia fuga, laudantium autem molestiae ab unde quas pariatur, 
+                        fugit eligendi, vitae quisquam impedit quam aliquam ipsam numquam dolorem 
+                        commodi cumque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ipsa ut odit molestias maxime eaque provident numquam dolorem magni 
+                        deleniti ipsam! Ipsa consequatur quo perspiciatis saepe sapiente ipsum 
+                        dicta distinctio nisi. Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Maiores quia fuga, laudantium autem molestiae ab unde quas pariatur, 
+                        fugit eligendi, vitae quisquam impedit quam aliquam ipsam numquam dolorem 
+                        commodi cumque?Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ipsa ut odit molestias maxime eaque provident numquam dolorem magni 
+                        deleniti ipsam! Ipsa consequatur quo perspiciatis saepe sapiente ipsum 
+                        dicta distinctio nisi. Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Maiores quia fuga, laudantium autem molestiae ab unde quas pariatur, 
+                        fugit eligendi, vitae quisquam impedit quam aliquam ipsam numquam dolorem 
+                        commodi cumque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ipsa ut odit molestias maxime eaque provident numquam dolorem magni 
+                        deleniti ipsam! Ipsa consequatur quo perspiciatis saepe sapiente ipsum 
+                        dicta distinctio nisi. Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Maiores quia fuga, laudantium autem molestiae ab unde quas pariatur, 
+                        fugit eligendi, vitae quisquam impedit quam aliquam ipsam numquam dolorem 
+                        commodi cumque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ipsa ut odit molestias maxime eaque provident numquam dolorem magni 
+                        deleniti ipsam! Ipsa consequatur quo perspiciatis saepe sapiente ipsum 
+                        dicta distinctio nisi. Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Maiores quia fuga, laudantium autem molestiae ab unde quas pariatur, 
+                        fugit eligendi, vitae quisquam impedit quam aliquam ipsam numquam dolorem 
+                        commodi cumque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ipsa ut odit molestias maxime eaque provident numquam dolorem magni 
+                        deleniti ipsam! Ipsa consequatur quo perspiciatis saepe sapiente ipsum 
+                        dicta distinctio nisi. Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Maiores quia fuga, laudantium autem molestiae ab unde quas pariatur, 
+                        fugit eligendi, vitae quisquam impedit quam aliquam ipsam numquam dolorem 
+                        commodi cumque?Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ipsa ut odit molestias maxime eaque provident numquam dolorem magni 
+                        deleniti ipsam! Ipsa consequatur quo perspiciatis saepe sapiente ipsum 
+                        dicta distinctio nisi. Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Maiores quia fuga, laudantium autem molestiae ab unde quas pariatur, 
+                        fugit eligendi, vitae quisquam impedit quam aliquam ipsam numquam dolorem 
+                        commodi cumque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ipsa ut odit molestias maxime eaque provident numquam dolorem magni 
+                        deleniti ipsam! Ipsa consequatur quo perspiciatis saepe sapiente ipsum 
+                        dicta distinctio nisi. Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Maiores quia fuga, laudantium autem molestiae ab unde quas pariatur, 
+                        fugit eligendi, vitae quisquam impedit quam aliquam ipsam numquam dolorem 
+                        commodi cumque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Ipsa ut odit molestias maxime eaque provident numquam dolorem magni 
+                        deleniti ipsam! Ipsa consequatur quo perspiciatis saepe sapiente ipsum 
+                        dicta distinctio nisi. Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit.
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section class="add-notes">
+            <nav class="container-heading">
+                <!-- <h2>NEW NOTE</h2> -->
+
+            </nav>
+        </section>
     </body>
 </html>
