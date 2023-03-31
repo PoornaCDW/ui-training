@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pocket Notes</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/pocket-notes-exercise/css/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;400&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/pocket-notes-exercise/css/index.css" />
     </head>
     <body>
         <nav class="nav-bar" id="navBar">
             <div class="float-left">
-                <h3>Pocket Notes</h3>
+                <h3>Pocket <span>Notes</span></h3>
             </div>
             <div class="float-right">
                 <button id="deleteAllButton">DELETE ALL</button>
@@ -25,7 +26,7 @@
         </nav>
         <section class="dimming-effect"></section>
         <section class="cards-container" id="cardsContainer">
-            <article class="card">
+            <!-- <article class="card">
                 <h2 class="card-heading">Summer Time - A Long Short Story</h2>
                 <h4 class="date">Mar 11, 2022</h4>
                 <p class="notes">
@@ -134,17 +135,17 @@
                     Voluptates nulla officia, consequatur ipsam facere provident, facilis voluptatibus numquam eos architecto 
                     veritatis ea recusandae ullam natus perspiciatis nobis expedita consequuntur aliquid.
                 </p>
-            </article>
+            </article> -->
         </section>
-        <div class="load-more">
+        <!-- <div class="load-more">
             <button class="load-more-button" id="loadMoreButton">LOAD MORE</button>
-        </div>
+        </div> -->
         <section class="empty-container">
-            <img src="/pocket-notes-exercise/images/cube-icon.PNG" alt="">
-            <h2 class="empty-container-heading">Notes you add appear here</h2>
+            <!-- <img src="/pocket-notes-exercise/images/cube-icon.PNG" alt="">
+            <h2 class="empty-container-heading">Notes you add appear here</h2> -->
         </section>
         <section class="expanded-card">
-            <article class="card-contents-container">
+            <!-- <article class="card-contents-container">
                 <div class="color-circle"></div>
                 <div class="content">
                     <h1 class="content-heading">Summer Time - A Long Short Story</h1>
@@ -217,13 +218,30 @@
                         elit.
                     </p>
                 </div>
-            </article>
+            </article> -->
         </section>
         <section class="add-notes">
-            <nav class="container-heading">
-                <!-- <h2>NEW NOTE</h2> -->
-
+            <!-- <nav class="container-heading">
+                <h2>NEW NOTE</h2>
+                <i class="fa-solid fa-xmark"></i>
             </nav>
+            <form class="addNotesForm" action="#">
+                <input type="text" value="Notes Title" />
+                <textarea name="" id="notesContent">Add Content Here</textarea>
+                <div class="bottom-bar">
+                    <div class="color-palette">
+                        <div class="color-1"></div>
+                        <div class="color-2"></div>
+                        <div class="color-3"></div>
+                        <div class="color-4"></div>
+                        <div class="color-5"></div>
+                    </div>
+                    <button id="addButton">ADD</button>
+                    <button id="saveButton">SAVE</button>
+                </div>
+            </form> -->
+        </section>
+        <section class="alert-box">
         </section>
     </body>
 </html>

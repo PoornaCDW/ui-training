@@ -20,6 +20,12 @@ $navBarFontColor: #fff;
     cursor: pointer;
 }
 
+@mixin colorPalette {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
 @mixin button-styles {
     border-radius: 50px;
     color: $navBarFontColor;
@@ -30,7 +36,7 @@ $navBarFontColor: #fff;
 }
 
 body {
-    overflow-y: hidden;
+    // overflow-y: hidden;
     font-family: 'Lato', sans-serif;
     background-color: $bodyBackgroundColor;
 }
@@ -55,6 +61,10 @@ body {
         font-size:  35px;
         font-weight: 400;
         font-family: 'IBM Plex Serif', sans-serif;
+
+        span {
+            font-weight: 700;
+        }
     }
 
     button {
@@ -93,6 +103,8 @@ body {
 }
 
 .dimming-effect {
+    @include displayHidden();
+
     top: 0;
     z-index: 2;
     width: 100%;
@@ -157,7 +169,7 @@ body {
         @include button-styles();
 
         margin-top: 4vh;
-        padding: 25px 40px; 
+        padding: 25px 40px;
         background-color: #B355B7;
     }
 }
@@ -229,6 +241,7 @@ body {
 
 .add-notes {
     @include flex();
+    @include displayHidden();
 
     top: 0;
     right: 0;
@@ -238,12 +251,104 @@ body {
     color: #fff;
     padding: 50px;
     position:  absolute;
-    background-color: red;
+    flex-direction: column;
+    background-color: #000;
 
-    .container-heading {
+    .addNotesForm {
         @include flex();
 
-        background-color: $navBarColor;
-        justify-content: space-between;
+        gap: 30px;
+        margin-top: 4vh;
+        flex-direction: column;
+
+        input {
+            border: 0;
+            font-size: 30px;
+            color: #6B6B6B;
+            background-color: #000;
+            font-family: 'Lato', sans-serif;
+        }
+
+        textarea {
+            border: 0;
+            resize: none;
+            height: 73vh;
+            font-size: 20px;
+            color: #6B6B6B;
+            background-color: #000;
+            font-family: 'Lato', sans-serif;
+        }
+
+        .bottom-bar {
+            @include flex();
+
+            justify-content: space-between;
+
+            .color-palette {
+                @include flex();
+
+                gap: 12px;
+
+                .color-1 {
+                    @include colorPalette();
+
+                    background-color: #EBCCED;
+                }
+
+                .color-2 {
+                    @include colorPalette();
+
+                    background-color: #FCFCFC;
+                }
+
+                .color-3 {
+                    @include colorPalette();
+
+                    background-color: #FFCA71;
+                }
+
+                .color-4 {
+                    @include colorPalette();
+
+                    background-color: #E5EE91;
+                }
+
+                .color-5 {
+                    @include colorPalette();
+
+                    background-color: #FFA78C;
+                }
+            }
+
+            button {
+                @include button-styles();
+                @include mousePointer();
+
+                background-color: #B355B7;
+            }
+        }
     }
+}
+
+.container-heading {
+    @include flex();
+
+    width: 100%;
+    font-size: 12px;
+    padding: 15px 20px;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $navBarColor;
+
+    i {
+        @include mousePointer();
+
+        font-size: 20px;
+        color: #999999;
+    }
+}
+
+.alert-box {
+    @include flex();
 }

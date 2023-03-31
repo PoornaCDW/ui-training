@@ -5,7 +5,6 @@
 }
 
 body {
-  overflow-y: hidden;
   font-family: "Lato", sans-serif;
   background-color: #000;
 }
@@ -29,6 +28,9 @@ body {
   font-size: 35px;
   font-weight: 400;
   font-family: "IBM Plex Serif", sans-serif;
+}
+.nav-bar h3 span {
+  font-weight: 700;
 }
 .nav-bar button {
   border-radius: 50px;
@@ -57,6 +59,7 @@ body {
 }
 
 .dimming-effect {
+  display: none;
   top: 0;
   z-index: 2;
   width: 100%;
@@ -176,6 +179,7 @@ body {
 
 .add-notes {
   display: flex;
+  display: none;
   top: 0;
   right: 0;
   z-index: 3;
@@ -184,12 +188,98 @@ body {
   color: #fff;
   padding: 50px;
   position: absolute;
-  background-color: red;
+  flex-direction: column;
+  background-color: #000;
 }
-.add-notes .container-heading {
+.add-notes .addNotesForm {
   display: flex;
-  background-color: #041D2E;
+  gap: 30px;
+  margin-top: 4vh;
+  flex-direction: column;
+}
+.add-notes .addNotesForm input {
+  border: 0;
+  font-size: 30px;
+  color: #6B6B6B;
+  background-color: #000;
+  font-family: "Lato", sans-serif;
+}
+.add-notes .addNotesForm textarea {
+  border: 0;
+  resize: none;
+  height: 73vh;
+  font-size: 20px;
+  color: #6B6B6B;
+  background-color: #000;
+  font-family: "Lato", sans-serif;
+}
+.add-notes .addNotesForm .bottom-bar {
+  display: flex;
   justify-content: space-between;
+}
+.add-notes .addNotesForm .bottom-bar .color-palette {
+  display: flex;
+  gap: 12px;
+}
+.add-notes .addNotesForm .bottom-bar .color-palette .color-1 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #EBCCED;
+}
+.add-notes .addNotesForm .bottom-bar .color-palette .color-2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #FCFCFC;
+}
+.add-notes .addNotesForm .bottom-bar .color-palette .color-3 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #FFCA71;
+}
+.add-notes .addNotesForm .bottom-bar .color-palette .color-4 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #E5EE91;
+}
+.add-notes .addNotesForm .bottom-bar .color-palette .color-5 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #FFA78C;
+}
+.add-notes .addNotesForm .bottom-bar button {
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 100px;
+  font-size: 20px;
+  padding: 10px 40px;
+  border: none;
+  cursor: pointer;
+  background-color: #B355B7;
+}
+
+.container-heading {
+  display: flex;
+  width: 100%;
+  font-size: 12px;
+  padding: 15px 20px;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #041D2E;
+}
+.container-heading i {
+  cursor: pointer;
+  font-size: 20px;
+  color: #999999;
+}
+
+.alert-box {
+  display: flex;
 }
 
 /*# sourceMappingURL=index.css.map */
